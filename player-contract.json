@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "mcpServer": "shadow-study",
+  "requestedScope": "exams:import study:practice",
+  "resourceUri": "ui://shadow-study/exam-player/v1.html",
+  "renderTool": "open_exam_player",
+  "appTools": [
+    "get_player_exam",
+    "get_player_attempt",
+    "start_player_attempt",
+    "save_player_answers",
+    "check_player_question",
+    "submit_player_attempt"
+  ]
+}
