@@ -1,0 +1,68 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "shadow-study",
+  "version": "1.0.0",
+  "description": "Create practice exams and use your completed Shadow Study results for follow-up practice.",
+  "author": {
+    "name": "Shadow Study",
+    "url": "https://shadow.study",
+    "email": "contato@shadow.study"
+  },
+  "homepage": "https://shadow.study",
+  "repository": "https://github.com/shadow-study/shadow-study-plugins",
+  "license": "MIT",
+  "keywords": [
+    "study",
+    "exams",
+    "practice"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Shadow Study",
+        "shortDescription": "Create exams and follow-ups",
+        "longDescription": "Create multiple-choice practice exams from material and preferences you choose to share. Save generated exams directly to your Shadow Study library, then practice on the website. Find your exams, choose completed attempts, and use their questions, answers and results to plan follow-up practice. Requires an existing Shadow Study account with study access. The plugin provides access to included study features and does not sell products, handle payments or offer upgrades. Sign in and approve the connection before using account tools. Completed-result reads require results permission and the Share results with connected AI apps setting; you can disable sharing or revoke the connection in Profile. This release uses chat tool responses and website links, with no embedded exam player.",
+        "developerName": "Shadow Study",
+        "category": "Education & Research",
+        "capabilities": [
+          "Create practice exams",
+          "Save exams",
+          "Find owned exams",
+          "List completed attempts",
+          "Read completed results"
+        ],
+        "websiteURL": "https://shadow.study",
+        "privacyPolicyURL": "https://shadow.study/privacy",
+        "termsOfServiceURL": "https://shadow.study/terms",
+        "supportURL": "https://shadow.study/support",
+        "defaultPrompt": [
+          "Create a practice exam from the material I share.",
+          "Find my exams so I can choose completed results for follow-up practice."
+        ],
+        "brandColor": "#375e43",
+        "brandColorDark": "#c5dba2",
+        "composerIcon": "./assets/icon.png",
+        "composerIconDark": "./assets/icon-dark.png",
+        "logo": "./assets/logo.png",
+        "logoDark": "./assets/logo-dark.png"
+      },
+      "publication": {
+        "countries": [
+          "BR",
+          "US"
+        ],
+        "release_notes": "Initial release with exam generation guidance, direct saving, owned-exam discovery, completed-attempt listing and completed-result follow-up. No embedded player or Enterprise identity support.",
+        "translations": {
+          "pt-BR": {
+            "subtitle": "Crie provas e pratique mais",
+            "description": "Crie provas de múltipla escolha com o material e as preferências que você escolher compartilhar. Salve as provas geradas diretamente na sua biblioteca do Shadow Study e pratique no site. Encontre suas provas, escolha tentativas concluídas e use as questões, respostas e resultados para planejar mais exercícios. É preciso ter uma conta existente no Shadow Study com acesso ao estudo. O plugin dá acesso aos recursos de estudo incluídos na conta e não vende produtos, processa pagamentos nem oferece upgrades. Entre na conta e autorize a conexão antes de usar as ferramentas da conta. A leitura de resultados concluídos exige permissão para resultados e a opção Compartilhar resultados com apps de IA conectados; você pode desativar o compartilhamento ou revogar a conexão no Perfil. Esta versão usa respostas de ferramentas no chat e links para o site, sem um leitor de provas incorporado."
+          }
+        }
+      },
+      "review": {
+        "commerce": false,
+        "commerce_description": "This plugin connects existing Shadow Study accounts with study access to the features available to them. Access may be invited or complimentary, or provided by a subscription when subscriptions are available. The plugin does not sell products or services, process payments, initiate subscriptions or upgrades, or charge an additional plugin fee."
+      }
+    }
+  }
+}
